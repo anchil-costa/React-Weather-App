@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Rubik:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+:root{
+    --section-overlay: rgba(0,0,0,0.6);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    background-color: white;
+    color: black;
+    height: 43px;
+    margin-right: 5px;
+    border-radius: 7px;
+}
+
+
+.input {
+    display: flex;
+}
+
+.degree {
+    display: flex;
+    margin-left: 10px;
+}
+
+.degree button {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+
+.saved-cities{
+    margin-right: 20px;
+}
+
+body {
+    overflow: hidden;
+    color: white;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.clear-sky{
+    background-image: url('clear\ sky.gif');
+}
+
+.cloudy-sky{
+    background-image: url('cloudy\ sky.gif');
+}
+
+.haze-sky{
+    background-image: url('haze.gif');
+}
+
+.fog-sky{
+    background-image: url('fog.jpg');
+}
+
+.rain-sky{
+    background-image: url('rain.gif');
+}
+
+.snowy-sky{
+    background-image: url('snow.gif');
+}
+
+.default-background{
+    background-image: url('default.jpg');
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    padding-top: 12px;
+    width: fit-content;
+    margin: auto;
+}
+
+.name p {
+    margin-bottom: 0px;
+}
+
+
+.temperature {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-weight: bolder;
+    height: auto;
+    width: fit-content;
+    margin: auto;
+}
+
+
+
+
+.temperature p {
+    margin-bottom: 0px;
+}
+
+.temp-num {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.temp-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    
+}
+
+.weather-discrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+}
+
+.time {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.weather-title {
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+}
+
+.weather-title p {
+    margin-bottom: 0px;
+}
+
+
+
+.min-max {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    margin: auto;
+    font-style: normal;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+.conditions {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.attributes {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: var(--section-overlay);
+    border-radius: 0.3rem;
+    height: fit-content;
+    width: 150px;
+}
+
+.attributes p{
+    margin: 10px;
+}
+
+.values {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.modal{
+    color: black;
+}
+
+.saved-cities{
+    display: flex;
+    flex-direction: column;
+}
+
+.city-name{
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border: 2px solid black;
+}
+
+.city-name button{
+    margin-right: 10px;
+}
+
+.city-name p{
+    margin-left: 25px;
+}
+
+.city-name p:hover{
+    cursor: pointer;
+}
+
+.forecast-heading{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+
+.forecast-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.days-forecast{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width:1450px ;
+    justify-content: space-between;
+}
+
+
+.forecast-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: fit-content;
+    height: 140px;
+    border-radius: 7px;
+    margin-right: 60px;
+    background-color: var(--section-overlay);
+}
+
+.forecast-attributes{
+    display: flex;
+    align-items: center;
+}
+
+.forecast-data{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mukta', sans-serif;
+    font-weight:bolder;
+    font-size: larger;
+}
+
+.air{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: fit-content;
+}
+
+
+.info a:hover{
+    cursor: pointer;
+}
+
+.info a{
+    margin-left: 8px;
+}
+
+
+.info-logo{
+    display: flex;
+}
