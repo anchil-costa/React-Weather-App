@@ -42,7 +42,7 @@ input {
 }
 
 body {
-    overflow: hidden;
+    overflow: auto;
     color: white;
 }
 
@@ -176,6 +176,13 @@ body {
     align-items: center;
 }
 
+@media (max-width: 1064px) {
+    .conditions {
+        flex-wrap: wrap;
+    
+    }
+  }
+
 .attributes {
     display: flex;
     flex-direction: column;
@@ -248,19 +255,32 @@ body {
     margin-right: 40px;
     width:1450px ;
     justify-content: space-between;
+    
 }
 
+@media (max-width: 1507px) {
+    .days-forecast {
+        width: 1430px;
+    }
+  }
+
+  @media (max-width: 1487px) {
+    .days-forecast {
+        width: 1410px;
+    }
+  }
 
 .forecast-item{
     display: flex;
-    flex-direction: column;
     margin-top: 10px;
     width: fit-content;
     height: 140px;
     border-radius: 7px;
     margin-right: 60px;
+    border: 1px solid white;
     background-color: var(--section-overlay);
 }
+
 
 .forecast-attributes{
     display: flex;
